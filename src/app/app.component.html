@@ -1,0 +1,15 @@
+<h1>
+  Editor Example
+</h1>
+
+<div class="card">
+  <h2>Basic</h2>
+  <p-editor [(ngModel)]="text" [style]="{ height: '320px' }" />
+</div>
+
+<div class="card">
+  <h2>Reactive Form</h2>
+  <form [formGroup]="formGroup">
+    <p-editor formControlName="text" [style]="{ height: '320px' }" />
+  </form>
+</div>
